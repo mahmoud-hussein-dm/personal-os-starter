@@ -1,0 +1,184 @@
+I want you to set up this project folder as my personal executive assistant / second brain in Claude Code.
+
+You will do this in 3 phases. Complete each phase fully before moving to the next.
+
+## Phase 1: Create The Folder Structure
+
+Initialize a git repo in this folder if one does not exist.
+
+Then create this starter structure:
+
+```text
+CLAUDE.md
+AGENTS.md
+CLAUDE.local.md
+.gitignore
+.claude/
+  settings.json
+  rules/
+  skills/
+context/
+  me.md
+  work.md
+  team.md
+  current-priorities.md
+  goals.md
+  skills-backlog.md
+templates/
+  session-summary.md
+references/
+  sops/
+  examples/
+projects/
+decisions/
+  log.md
+archives/
+```
+
+For empty directories, create a `.gitkeep` file so git tracks them.
+
+Use this `.gitignore`:
+
+```text
+.env
+CLAUDE.local.md
+.claude/settings.local.json
+node_modules/
+.DS_Store
+```
+
+Use this `CLAUDE.local.md`:
+
+```markdown
+# Local Overrides
+
+Personal preferences and overrides that do not get shared through git.
+Add anything specific to your local setup here.
+```
+
+Use this `templates/session-summary.md`:
+
+```markdown
+# Session Summary
+
+**Date:**
+**Focus:**
+
+## What Got Done
+-
+
+## Decisions Made
+-
+
+## Open Items / Next Steps
+-
+
+## Memory Updates
+- Preferences learned:
+- Decisions to log:
+```
+
+Use this `decisions/log.md`:
+
+```markdown
+# Decision Log
+
+Append-only. When a meaningful decision is made, log it here.
+
+Format: [YYYY-MM-DD] DECISION: ... | REASONING: ... | CONTEXT: ...
+
+---
+```
+
+## Phase 2: Interview Me
+
+Before filling the context files, rules, and brain files, interview me.
+
+Ask one section at a time. Wait for my answers before moving to the next section.
+
+### Section 1: About You
+
+- What is your name?
+- What is your role/title?
+- What is your timezone?
+- In one sentence, what do you do?
+- What is your number one priority right now?
+
+### Section 2: Your Business / Work
+
+- What is your company or work called?
+- What are your products, services, or revenue streams?
+- Roughly how much revenue does each generate? Optional.
+- What tools do you use day to day?
+- Do you have any MCP servers or tool integrations connected?
+
+### Section 3: Your Team
+
+- Do you have a team?
+- Who are the key people I should know about?
+- Where does your team communicate?
+- What is your biggest pain point with managing work or people?
+
+### Section 4: Priorities, Goals, Projects
+
+- What are the 3-5 things you are most focused on right now?
+- Are there any deadlines or time-sensitive items?
+- Do you have quarterly goals or milestones?
+- What active projects or workstreams are you managing?
+
+### Section 5: Communication Preferences
+
+- How do you like information presented?
+- Any writing pet peeves?
+- What tone do you want internally?
+- What tone do you want for external/public-facing content?
+
+### Section 6: What You Want Help With
+
+- What recurring tasks eat up your time?
+- What would you hand off to an assistant first?
+- What workflows do you want to automate or templatize?
+
+## Phase 3: Build The Files
+
+Based on my answers:
+
+- Fill `context/me.md`
+- Fill `context/work.md`
+- Fill `context/team.md`
+- Fill `context/current-priorities.md`
+- Fill `context/goals.md`
+- Fill `context/skills-backlog.md`
+- Create one folder per active project in `projects/`
+- Create focused rules in `.claude/rules/`
+- Update `CLAUDE.md`
+- Update `AGENTS.md`
+
+Keep `CLAUDE.md` under 150 lines.
+
+Do not put private secrets in shared files.
+
+Do not create skills yet. Leave `.claude/skills/` empty.
+
+## Final Step
+
+After everything is created:
+
+1. Show me the file tree.
+2. Summarize what is in each file.
+3. List the skills backlog from my answers.
+4. Show this maintenance cheat sheet:
+
+```markdown
+## Keeping Your Assistant Sharp
+
+- Weekly: nothing required. Memory handles daily learnings.
+- Monthly: update `context/current-priorities.md` if your focus shifted.
+- Quarterly: update `context/goals.md`.
+- As needed: log decisions, add references, build new skills.
+- Pro tip: say "Remember that I always prefer X" when you want something saved permanently.
+```
+
+5. Create the first git commit.
+6. Ask if I want to build any of the skills now.
+
