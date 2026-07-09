@@ -1,81 +1,88 @@
-# Build: Build Your Executive Assistant Personal OS
+# Build: Your Executive Assistant Personal OS
 
 Turn Claude into an operating system for your whole life and business.
 
-This is the exact starter structure from the video: grab the repo, open it in Claude Code, and Claude interviews you to set it up around your life, business, goals, tools, and recurring workflows.
+This is the exact starter structure from the video. Grab it, open it in Claude Code, and Claude will interview you to set it up around your life, business, projects, tools, priorities, and recurring workflows.
 
 ## Repo
 
 https://github.com/mahmoud-hussein-dm/personal-os-starter
 
+## Resources
+
+- GitHub repo: https://github.com/mahmoud-hussein-dm/personal-os-starter
+- `CLAUDE.md` - the main brain file
+- `AGENTS.md` - instructions for Codex/other coding agents
+- `Executive Assistant Initialize Prompt.txt` - paste this into Claude Code to start setup
+- `CLAUDE.local.example.md` - private/local override example
+- `AGENTS.local.example.md` - private/local agent override example
+
 ## What You're Building
 
-Your own AI executive assistant in Claude Code: a local project folder that knows your context, tracks your decisions, organizes your projects, and gets smarter over time.
+Your own AI executive assistant in Claude Code.
 
-Instead of opening a new chat and explaining your life from scratch every day, you give Claude a home:
+It will live inside one folder and keep track of:
 
-- `CLAUDE.md` = the main brain file
-- `AGENTS.md` = instructions for Codex/other coding agents
-- `context/` = your life, work, priorities, team, goals
-- `projects/` = active workstreams
-- `decisions/log.md` = why you made important decisions
-- `references/` = SOPs, examples, style guides, docs
-- `.claude/skills/` = repeatable workflows you build later
+- who you are
+- what you do
+- your business or work
+- your priorities
+- your projects
+- your goals
+- your decisions
+- your references and SOPs
+- recurring workflows that can become skills
 
-The rule: always work inside the folder. That's what makes it compound.
+The point is simple: stop re-explaining your life to AI every day. Give Claude a home so it can compound.
 
-## Before You Start, Make Sure You Have
+## Before You Start
 
-- Claude Code set up in VS Code or the Claude Code CLI
-- A GitHub account for backing up your project
-- The starter repo linked above
-- Optional: MCP servers you want to connect later, such as Gmail, Notion, Shopify, Meta, Google Calendar, ClickUp, Telegram, GitHub
+Make sure you have:
 
-You do not need MCP connected on day one. Start with the folder and context first.
+- Claude Code installed in VS Code or CLI
+- A GitHub account for backup
+- The repo above cloned locally
+- Optional: MCP tools you want to connect later, such as Gmail, Notion, Shopify, Meta, Telegram, Google Calendar, ClickUp, or GitHub
+
+You do not need MCP connected on day one. Start with the folder first.
 
 ## Steps
 
-### 1. Clone The Repo
+1. Install Claude Code.
+
+2. Clone the starter repo:
 
 ```bash
 git clone https://github.com/mahmoud-hussein-dm/personal-os-starter my-os
 cd my-os
 ```
 
-You can rename `my-os` to your name, your business name, or whatever makes sense.
-
-### 2. Open The Folder In Claude Code
-
-Open the whole folder in VS Code or Claude Code.
+3. Open the whole folder in Claude Code.
 
 Do not open only one file. The folder is the operating system.
 
-### 3. Start The Setup
-
-Paste this into Claude Code:
+4. Paste this into Claude Code:
 
 ```text
 Read Executive Assistant Initialize Prompt.txt and interview me to set this up around my life and businesses.
 ```
 
-Claude will create or update the structure, then interview you section by section.
+5. Go through the full interview.
 
-### 4. Go Through The Full Interview
+Claude will ask about:
 
-Answer all 6 sections honestly and in detail:
+- you
+- your work/business
+- your team
+- your priorities
+- your goals
+- your active projects
+- your communication style
+- tasks you want help with
 
-1. About you
-2. Your business/work
-3. Your team
-4. Priorities, goals, and projects
-5. Communication preferences
-6. What you want help with
+Answer properly. The better your answers, the better your assistant becomes.
 
-Take your time. These answers become the assistant's operating context.
-
-### 5. Review The Generated Context
-
-After the interview, open and check:
+6. Review the generated files:
 
 - `context/me.md`
 - `context/work.md`
@@ -85,112 +92,109 @@ After the interview, open and check:
 - `context/skills-backlog.md`
 - `decisions/log.md`
 
-Fix anything inaccurate. Bad context creates bad assistant behaviour.
+Fix anything inaccurate.
 
-### 6. Create Local Overrides
-
-Copy the example local files:
+7. Create your private local override files:
 
 ```bash
 cp CLAUDE.local.example.md CLAUDE.local.md
 cp AGENTS.local.example.md AGENTS.local.md
 ```
 
-Use these for private details that should not go to GitHub.
+Use those for private details you do not want on GitHub.
 
-### 7. Connect Tools Over MCP
-
-Once the base folder works, connect tools if you want the assistant to take real actions.
+8. Connect tools over MCP later.
 
 Examples:
 
 - Gmail for inbox scans
 - Notion for knowledge/project databases
 - Shopify for store reports
-- Meta Ads for ad account checks
+- Meta Ads for ad checks
 - Telegram for alerts
 - Google Calendar for schedule awareness
 - GitHub for repo work
 
-Add connected tools to `context/work.md` or `references/tools.md` so Claude knows what is available.
-
-### 8. Add Cadence
-
-This is where it becomes an operating system.
+9. Add cadence.
 
 Examples:
 
-- Morning priority check
-- Inbox scan every 20 minutes
-- Morning store report
+- morning priority check
+- inbox scan
+- morning store report
 - AI radar brief
-- Weekly decision log review
-- Project check-in
-- Telegram alerts for urgent items
+- weekly decision review
+- project check-in
+- Telegram alerts
 
-Start manually. Once the workflow is stable, turn it into a skill or schedule.
+Start manually first. Once the workflow is stable, turn it into a skill or schedule.
 
-### 9. Build Your First Skill
+10. Build your first skill.
 
-Pick one recurring task you do daily or weekly:
+Pick one recurring task you do often:
 
-- Morning planning
-- Email summary
-- Project check-in
-- Store report
-- Content idea scan
-- Lead follow-up
-- Meeting prep
+- morning planning
+- email summary
+- project check-in
+- store report
+- content idea scan
+- lead follow-up
+- meeting prep
 
-Do it manually with Claude Code first.
-
-Once the process is good, say:
+Do it manually with Claude Code first. When the workflow feels right, say:
 
 ```text
 Turn this into a skill so I can run it anytime.
 ```
 
-Test the skill 2-3 times and improve it.
+Test it 2-3 times and improve it.
 
-### 10. Push Your Personalized Version To GitHub
+11. Back up your personalized version to GitHub.
 
-After setup:
+Use a private repo if your context contains personal or business details.
 
 ```bash
 git add .
 git commit -m "Set up my Personal OS"
-git remote add origin <your-new-private-repo-url>
+git remote add origin <your-private-repo-url>
 git push -u origin main
 ```
-
-Use a private repo if your context contains personal or business details.
 
 ## You're Done When
 
 You have:
 
-- A working Personal OS folder
-- Populated context files
-- A `CLAUDE.md` brain file
-- An `AGENTS.md` agent instruction file
-- A decision log
-- Current priorities and goals
-- At least one recurring workflow ready to become a skill
+- a working Personal OS folder
+- populated context files
+- `CLAUDE.md`
+- `AGENTS.md`
+- a decision log
+- current priorities and goals
+- a skills backlog
+- at least one recurring workflow ready to turn into a skill
 
 Bonus: one working skill you can trigger by name.
 
+## The Rule That Makes It Work
+
+Always work inside the folder.
+
+That is what makes the assistant compound.
+
 ## What Breaks This
 
-- Working outside the folder
-- Not updating priorities
-- Not logging important decisions
-- Dumping secrets into git
-- Creating skills too early before the workflow is clear
-- Treating this like a one-time setup instead of a living operating system
+- working outside the folder
+- not updating priorities
+- not logging decisions
+- putting secrets into git
+- making skills before the workflow is clear
+- treating this like a one-time setup instead of a living operating system
 
-## Paste The CLAUDE.md Inline
+## Copy Blocks
 
-Members can copy this into their own `CLAUDE.md` if they do not want to clone the repo.
+If you do not want to clone the repo, copy the files below manually.
+
+### CLAUDE.md
 
 ````markdown
 # Personal OS Assistant
@@ -317,13 +321,9 @@ Use:
 ## Archives
 
 Do not delete useful material. Move completed or outdated material to `archives/`.
-
-
 ````
 
-## Paste The AGENTS.md Inline
-
-Use this if you also work with Codex or another coding agent.
+### AGENTS.md
 
 ````markdown
 # Personal OS Agent Instructions
@@ -406,13 +406,9 @@ Track future skill ideas in `context/skills-backlog.md`.
 - Do not commit `CLAUDE.local.md`.
 - Do not expose API keys, passwords, private customer data, or private financial data.
 - If a file looks private, ask before making it public.
-
-
 ````
 
-## Paste The Initialize Prompt Inline
-
-Use this prompt to make Claude interview you and personalize the folder.
+### Executive Assistant Initialize Prompt.txt
 
 ````text
 I want you to set up this project folder as my personal executive assistant / second brain in Claude Code.
@@ -598,14 +594,12 @@ After everything is created:
 
 5. Create the first git commit.
 6. Ask if I want to build any of the skills now.
-
-
 ````
 
 ## Maintenance Cheat Sheet
 
-- Weekly: nothing required. Memory handles daily learnings.
-- Monthly: glance at `context/current-priorities.md`. If your focus shifted, update it.
-- Quarterly: update `context/goals.md` with new goals and milestones.
-- As needed: log decisions in `decisions/log.md`, add references, build new skills.
-- Pro tip: if you want Claude to remember something permanently, say: "Remember that I always prefer X."
+- Weekly: nothing required. Use the folder as normal.
+- Monthly: update `context/current-priorities.md` if your focus changed.
+- Quarterly: update `context/goals.md`.
+- As needed: log decisions, add references, build new skills.
+- Pro tip: say "Remember that I always prefer X" when you want Claude to save a preference permanently.
