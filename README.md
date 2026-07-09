@@ -9,6 +9,7 @@ This is a public starter version of the system shown in the video. It is intenti
 - A local folder structure for your life, business, projects, decisions, and reference material
 - A `CLAUDE.md` brain file for Claude Code
 - An `AGENTS.md` brain file for Codex or other coding agents
+- Local override examples: `CLAUDE.local.example.md` and `AGENTS.local.example.md`
 - A guided initialize prompt that interviews you and fills the system around your real life
 - A decision log so your assistant compounds instead of forgetting
 - A skills folder for workflows you repeat often
@@ -44,6 +45,8 @@ The key rule: always work inside this folder. That is what makes the assistant c
 ```text
 CLAUDE.md
 AGENTS.md
+CLAUDE.local.example.md
+AGENTS.local.example.md
 Executive Assistant Initialize Prompt.txt
 lesson/lesson-instructions.md
 lesson/youtube-description-and-chapters.md
@@ -71,4 +74,3 @@ archives/
 - Quarterly: update `context/goals.md`
 - As needed: append meaningful decisions to `decisions/log.md`
 - When you repeat a workflow 3+ times: turn it into a skill in `.claude/skills/`
-
