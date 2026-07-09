@@ -16,7 +16,7 @@ When you do that, AI stops being a random chatbot and starts becoming an assista
 
 Grab the Personal OS starter repo here:
 
-<PASTE_GITHUB_REPO_LINK_HERE>
+https://github.com/mahmoud-hussein-dm/personal-os-starter
 
 Inside the repo:
 
@@ -51,7 +51,7 @@ Join AI Operator Lab:
 ## Links
 
 Personal OS starter:
-<PASTE_GITHUB_REPO_LINK_HERE>
+https://github.com/mahmoud-hussein-dm/personal-os-starter
 
 AI Operator Lab:
 <PASTE_SKOOL_LINK_HERE>
@@ -63,7 +63,7 @@ https://www.anthropic.com/claude-code
 
 The starter repo is here:
 
-<PASTE_GITHUB_REPO_LINK_HERE>
+https://github.com/mahmoud-hussein-dm/personal-os-starter
 
 Clone it, open it in Claude Code, then paste the initialize prompt. It will interview you and build the Personal OS around your life and business.
 

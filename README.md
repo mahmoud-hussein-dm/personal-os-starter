@@ -16,7 +16,7 @@ This is a public starter version of the system shown in the video. It is intenti
 ## Quick Start
 
 ```bash
-git clone <YOUR_REPO_LINK> my-personal-os
+git clone https://github.com/mahmoud-hussein-dm/personal-os-starter my-personal-os
 cd my-personal-os
 ```
 

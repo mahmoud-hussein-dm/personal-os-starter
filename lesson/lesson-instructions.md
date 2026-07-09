@@ -11,7 +11,7 @@ Turn Claude Code into an operating system for your life and business. This start
 ## Repo
 
 ```text
-<PASTE_GITHUB_REPO_LINK_HERE>
+https://github.com/mahmoud-hussein-dm/personal-os-starter
 ```
 
 ## What Members Will Build
@@ -35,7 +35,7 @@ Install Claude Code through the CLI or VS Code extension.
 ### 2. Clone The Starter Repo
 
 ```bash
-git clone <PASTE_GITHUB_REPO_LINK_HERE> my-personal-os
+git clone https://github.com/mahmoud-hussein-dm/personal-os-starter my-personal-os
 cd my-personal-os
 ```
 
